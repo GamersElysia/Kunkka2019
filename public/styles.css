@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+#root > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 16);
+    height: calc(100% / 10);
+    background-color: blue;
+    border: 3px outset #fefefe;
+    box-sizing: border-box;
+}
+
+#root > .island {
+    background-color: burlywood;
+}
+
+#root > .kunkka::before {
+    font-size: 8vh;
+    color: white;
+    content: "K";
+}
